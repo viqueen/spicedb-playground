@@ -1,0 +1,16 @@
+{
+  "name": "@viqueen/spicedb-root",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:viqueen/spicedb-playground.git",
+  "author": "viqueen <>",
+  "license": "Apache-2.0",
+  "private": true,
+  "workspaces": [
+    "harness"
+  ],
+  "scripts": {
+    "harness": "yarn workspace @viqueen/spicedb-harness run",
+    "zed": "docker run --rm authzed/zed:v0.18.1"
+  }
+}

@@ -1,0 +1,6 @@
+services:
+  authzed:
+    image: authzed/spicedb:v1.32.0
+    ports:
+      - "50051:50051"
+    command: ["serve", "--grpc-preshared-key", "playground"]
