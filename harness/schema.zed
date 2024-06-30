@@ -1,0 +1,28 @@
+definition user {
+    relation is_active: user
+}
+
+definition organisation {
+    relation member: user
+}
+
+definition group {
+    relation org: organisation
+    relation member: user
+}
+
+definition training_course {
+    relation org: organisation
+
+    relation viewer: user | group#member
+    relation assignee: user | group#member
+    relation instructor: user | group#member
+}
+
+definition training_progress {
+    relation org: organisation
+    relation course: training_course
+
+    permission can_comment = course->instructor
+    permission can_edit = course->assignee
+}
