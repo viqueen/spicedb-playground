@@ -1,0 +1,6 @@
+{
+ "watch": ["cmd", "internal"],
+  "ext": "go,zed",
+  "signal": "SIGTERM",
+  "exec": "go run cmd/main.go"
+}

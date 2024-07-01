@@ -1,0 +1,8 @@
+{
+  "name": "@viqueen/playground-project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "private": true
+}
